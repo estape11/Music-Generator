@@ -76,10 +76,16 @@ VARIABLE [A-Z][a-zA-Z0-9]*
 "Principal"											{return F_PRINCIPAL;}
 "Inicio"											{return COMENZAR;}
 "Final"												{return FINALIZAR_PROCEDIMIENTO;}
+
+"LOOP"												{return LOOP;}
+"IniLOOP"											{return INI_LOOP;}
+"FinLOOP"											{return FIN_LOOP;}
+
 {VARIABLE}											{return VARIABLE;}
 {NUMERO}											{return NUMERO;}
 {NOMBRE}											{return NOMBRE;}
 
+","													{return COMA;}
 "("													{return PARENTESIS_A;}
 ")"													{return PARENTESIS_C;}
 ";"													{return PUNTO_COMA;}
@@ -91,6 +97,7 @@ VARIABLE [A-Z][a-zA-Z0-9]*
 "="													{return IGUAL;}
 "--"												{return DECREMENTO;}
 "++"												{return INCREMENTO;}
+
 .                              						{printf("Error lexico en linea %d\n",yylineno);}
 %%
 

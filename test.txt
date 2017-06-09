@@ -3,7 +3,7 @@ IniMusica;
 		Inicio
 			prueba()
 				Inicio
-				/*j7887*/
+				/**/
 				DEF AA;
 				Final;
 		Final;
@@ -13,6 +13,13 @@ IniMusica;
 				Inicio
 				Oo++;
 				Final;
+		Final;
+	caca()
+		Inicio
+			LOOP(Lo,Pe,Le,Ew,R1)
+				IniLOOP
+					DEF Re=TE;
+				FinLOOP;
 		Final;
 	Principal()
 		Inicio
