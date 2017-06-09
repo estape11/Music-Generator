@@ -1,0 +1,30 @@
+IniMusica;
+	nombre()
+		Inicio
+			prueba()
+				Inicio
+				/*j7887*/
+				DEF AA;
+				Final;
+		Final;
+	nombre()
+		Inicio
+			prueba()
+				Inicio
+				Oo++;
+				Final;
+		Final;
+	Principal()
+		Inicio
+			prueba()
+				Inicio
+				DEF U=ER;
+				/*j*/
+				tuto()
+					Inicio
+						O--;
+					Final;
+				SET P=O;
+				Final;
+		Final;
+FinMusica;
