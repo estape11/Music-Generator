@@ -8,11 +8,11 @@
 
 NUMERO [0-9]+
 NOMBRE  [a-zA-Z]+
-VARIABLE [A-Z][a-zA-Z0-9]*
+VARIABLE [A-Z]([a-zA-Z0-9][@*#])*
 
 
 %%
-
+"Ejecute"											{return EJECUTE;}
 "SET"												{return SET;}
 "DEF"												{return DEF;}
 "CNota"												{return C_NOTA;}
@@ -77,13 +77,23 @@ VARIABLE [A-Z][a-zA-Z0-9]*
 "Inicio"											{return COMENZAR;}
 "Final"												{return FINALIZAR_PROCEDIMIENTO;}
 
-"LOOP"												{return LOOP;}
-"IniLOOP"											{return INI_LOOP;}
-"FinLOOP"											{return FIN_LOOP;}
+"Loop"												{return LOOP;}
+"InitLoop"											{return INI_LOOP;}
+"FinLoop"											{return FIN_LOOP;}
+
+"Contrario"											{return CONTRARIO;}
+"EnCaso"											{return CONDICION;}
+"FinEnCaso"											{return FIN_CONDICION;}						
+"Entonces"											{return ENTONCES;}
+
+"Silenc"											{return SILENCIO;}
+
 
 {VARIABLE}											{return VARIABLE;}
 {NUMERO}											{return NUMERO;}
 {NOMBRE}											{return NOMBRE;}
+
+
 
 ","													{return COMA;}
 "("													{return PARENTESIS_A;}
@@ -96,6 +106,9 @@ VARIABLE [A-Z][a-zA-Z0-9]*
 " "													{ }
 "="													{return IGUAL;}
 "--"												{return DECREMENTO;}
+"<"													{return MENOR;}
+">"													{return MAYOR;}
+"!="												{return DISTINTO;}
 "++"												{return INCREMENTO;}
 
 .                              						{printf("Error lexico en linea %d\n",yylineno);}

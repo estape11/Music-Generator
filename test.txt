@@ -1,37 +1,51 @@
 IniMusica;
-	nombre()
+	krimero()
 		Inicio
-			prueba()
-				Inicio
-				/**/
-				DEF AA;
-				Final;
-		Final;
-	nombre()
-		Inicio
-			prueba()
-				Inicio
-				Oo++;
-				Final;
-		Final;
-	caca()
-		Inicio
-			LOOP(Lo,Pe,Le,Ew,R1)
-				IniLOOP
-					DEF Re=TE;
-				FinLOOP;
-		Final;
+			Ejecute prueba;
+			/**/
+			DEF A#A;
+			EnCaso (C, =, 5)
+				Entonces
+					AA
+					EnCaso (C, =, 5)
+						Entonces
+							AA
+							IniComp
+								C^ Corch;
+							FinComp
+						Contrario
+							DEF Hal;
+					FinEnCaso;
+				Contrario
+					DEF Hal;
+			FinEnCaso;
+		Final nombre;
+	/*Este metodo es que se ejecutara en el programa*/
 	Principal()
+	/**/
 		Inicio
-			prueba()
-				Inicio
-				DEF U=ER;
-				/*j*/
-				tuto()
-					Inicio
-						O--;
-					Final;
-				SET P=O;
-				Final;
+			Ejecute prueba;
+			DEF U=ER;
+			/*j*/
+			Ejecute tuto;
+			O--;
+			DEF L=99;	
+			SET P=L9900;
+			/**/
+			IniComp
+				/*Inicia el Compas*/
+				Silenc(Tiempo);
+				C^ Corch;
+				/*Sirve*/
+				Silenc(88);
+			FinComp
+			/**/
+			Loop (1, 2, 100, 2, C)
+				/**/
+				InitLoop
+					SET P=O;
+				FinLoop;
+				/*sdf*/
+			SET P=O;
 		Final;
 FinMusica;
