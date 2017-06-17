@@ -7,8 +7,8 @@
 %}
 
 NUMERO [0-9]+
-NOMBRE  [a-zA-Z]+
-VARIABLE [A-Z]([a-zA-Z0-9][@*#])*
+NOMBRE  [a-zA-Z]*
+VARIABLE [A-Z][a-zA-Z0-9]*
 
 
 %%
@@ -85,8 +85,6 @@ VARIABLE [A-Z]([a-zA-Z0-9][@*#])*
 "EnCaso"											{return CONDICION;}
 "FinEnCaso"											{return FIN_CONDICION;}						
 "Entonces"											{return ENTONCES;}
-
-"Silenc"											{return SILENCIO;}
 
 
 {VARIABLE}											{return VARIABLE;}

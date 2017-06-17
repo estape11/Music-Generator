@@ -1,0 +1,66 @@
+IniMusica;
+	HimnoAlegria()
+		Inicio
+			Ejecute prueba;
+			DEF AA;
+			SET AA=9;
+			EnCaso (AA, =, 5)
+				Entonces
+					EnCaso (AA, =, 3)
+						Entonces
+							AA++;
+							IniComp
+								C^ Corch;
+							FinComp
+						Contrario
+							SET AA=87;
+					FinEnCaso;
+				Contrario
+					DEF FT=9;
+					SET AA=FT;
+			FinEnCaso;
+		Final HimnoAlegria;
+	/**/
+	
+PiratasCaribe()
+		Inicio
+			DEF C=1;
+			Ejecute prueba;
+			DEF AA;
+			SET AA=9;
+			EnCaso (AA, =, 5)
+				Entonces
+					EnCaso (AA, =, 3)
+						Entonces
+							Loop (1, 2, 100, 2, C)
+								InitLoop
+									IniComp
+										C^ Corch;
+									FinComp
+								FinLoop;
+						Contrario
+							SET AA=87;
+					FinEnCaso;
+				Contrario
+					DEF FT=9;
+					SET AA=FT;
+			FinEnCaso;
+		Final PiratasCaribe;
+	/**/
+	Principal()
+		Inicio
+			DEF W;
+			DEF T=0;
+			SET W=T;
+			Ejecute PiratasCaribe;
+			DEF C =3;
+			Loop (1, 2, 100, 2, C)
+				InitLoop
+					IniComp
+						C^ Corch;
+					FinComp
+				FinLoop;
+			DEF L=99;	
+			SET P=L9900;
+		Final Principal;
+FinMusica;
